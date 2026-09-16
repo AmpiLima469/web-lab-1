@@ -61,7 +61,7 @@ section a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #417330;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
@@ -98,10 +98,11 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .advantage-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
 }
 .advantage-card h3 {
     font-size: 24px;
@@ -111,4 +112,55 @@ footer {
 .advantage-card p {
     font-size: 16px;
     color: #555;
+}
+
+.about {
+    padding: 80px 20px 40px;
+}
+
+.about p {
+    max-width: 700;
+    margin: 0 auto 20px;
+}
+
+.team {
+    padding: 40px 20px 80px;
+}
+
+.team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:#417330d6
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-card {
+    width: 500px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #615612;
+}
+
+.team-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
